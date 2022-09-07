@@ -54,25 +54,6 @@ void _perror(void)
 	exit(EXIT_FAILURE);
 }
 /**
- * free_if - function to free if
- * Return: Nothing
- */
-void free_if(void)
-{
-	free(buff);
-	free_all(cmd);
-}
-/**
- * free_elif - function frees the else if
- * Return: Nothing
- */
-void free_elif(void)
-{
-	free(buff);
-	free_all(cmd);
-	exit(EXIT_SUCCESS);
-}
-/**
 * handler - handles signals and write the prompt
 * @_signal: signal to handle
 * Return: Nothing
@@ -91,3 +72,23 @@ void cisfun(void)
 	if (isatty(STDIN_FILENO))
 		write(STDOUT_FILENO, "cisfun$ ", 8);
 }
+/**
+ * free_if - function to free if
+ * Return: Nothing
+ */
+void free_if(void)
+{
+	free(buff);
+	free_all(cmd);
+}
+/**
+ * free_elif - function frees the else if
+ * Return: Nothing
+ */
+void free_elif(void)
+{
+	free(buff);
+	free_all(cmd);
+	exit(EXIT_SUCCESS);
+}
+
