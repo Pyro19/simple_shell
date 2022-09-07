@@ -33,5 +33,5 @@ void _execve(char **cmd, char *buff, char **env, char **av, int count)
 	else if (stat(cmd[0], &file_s) == 0)
 		execve(cmd[0], cmd, NULL);
 	else
-		_path(cmd, buff, env, av, count);
+		_find(cmd, buff, env, av, count);
 }

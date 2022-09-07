@@ -33,7 +33,7 @@ void free_all(char **ptr);
 void err_messenger(char **av, char *fcmd, int count);
 int _puterror(char c);
 void _eof(char *buff);
-void _path(char **cmd, char *buff, char **env, char **av, int count);
+void _find(char **cmd, char *buff, char **env, char **av, int count);
 
 
 #endif

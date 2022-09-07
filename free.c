@@ -24,25 +24,6 @@ void free_all(char **ptr)
 }
 /**
  * free_if - function to free if
- * Return: Nothing
- */
-void free_if(void)
-{
-	free(buff);
-	free_all(cmd);
-}
-/**
- * free_elif - function frees the else if
- * Return: Nothing
- */
-void free_elif(void)
-{
-	free(buff);
-	free_all(cmd);
-	exit(EXIT_SUCCESS);
-}
-/**
- * free_if - function to free if
  * @buff: pointer to buffer to be freed
  * @cmd: pointer to command to be freed
  * Return: Nothing

@@ -37,7 +37,7 @@ unsigned int _strconstlen(const char *s)
 */
 char *_strcpy(char *s1, char *s2, int n)
 {
-k	int i;
+	int i;
 
 	for (i = 0; i < n && s2[i] != '\0'; i++)
 		s1[i] = s2[i];
@@ -62,18 +62,6 @@ char *_strcpyconst(char *s1, const char *s2, int n)
 		s1[i] = '\0';
 
 	return (s1);
-}
-/**
-* _eof - control end of file
-* @buff: buffer array
-* Return: Nothing
-*/
-void _eof(char *buff)
-{
-	if (isatty(STDIN_FILENO))
-		write(STDOUT_FILENO, "\n", 1);
-	free(buff);
-	exit(0);
 }
 /**
  * _strcmp - function that compares two strings
