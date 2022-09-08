@@ -10,12 +10,11 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-void dec();
 void cisfun(void);
 void handler(int _signal);
 void _perror(void);
-void free_if(char *buff,char **cmd);
-void free_elif(char *buff,char **cmd);
+void free_if(char *buff, char **cmd);
+void free_elif(char *buff, char **cmd);
 unsigned int len_cmd(char *str);
 char **_strtok(char *str);
 void _execve(char **cmd, char *buff, char **env, char **av, int count);
